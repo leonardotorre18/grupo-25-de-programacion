@@ -1,3 +1,8 @@
+---
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.css";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,9 +11,17 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Terry Crews - FanPage</title>
+
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+			rel="stylesheet"
+		/> -->
 	</head>
 	<body>
+		<Navbar />
 		<slot />
 	</body>
 </html>
@@ -19,5 +32,6 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		/* font-family: "Google Sans", sans-serif; */
 	}
 </style>
